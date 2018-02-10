@@ -3,19 +3,40 @@
 	"name": "inform6",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
 		},
 		{
 			"include": "#directives"
 		},
 		{
-			"include": "#strings"
+			"include": "#keywords"
 		},
 		{
-			"include": "#comments"
-		}
+			"include": "#strings"
+		}		
 	],
-	"repository": {		
+	"repository": {
+		"constants": {
+			"comment": "Note that the order is important",
+			"patterns": [
+				{
+					"name": "constant.numeric.base2.inform6",
+					"match": "\\${2}[01]+\\b"
+				},				
+				{
+					"name": "constant.numeric.base16.inform6",
+					"match": "\\$[0-9a-fA-F]+"
+				},
+				{
+					"name": "constant.numeric.base10.inform6",
+					"match": "\\b[+-]?\\d+\\b"
+				}
+			]
+		},
+
 		"comments": {
 			"patterns": [{
 				"name": "comment.line.exclamation.inform6",
