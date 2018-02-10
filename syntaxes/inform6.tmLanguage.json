@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "inform",
+	"name": "inform6",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -12,21 +12,21 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.inform",
+				"name": "keyword.control.inform6",
 				"match": "\\b(if|while|for|return)\\b"
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.inform",
+			"name": "string.quoted.double.inform6",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.inform",
+					"name": "constant.character.escape.inform6",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.inform"
+	"scopeName": "source.inform6"
 }

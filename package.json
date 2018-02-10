@@ -12,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "inform",
-            "aliases": ["inform", "inform"],
+            "id": "inform6",
+            "aliases": ["inform6", "inform", "i6"],
             "extensions": [".inf",".h"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "inform",
-            "scopeName": "source.inform",
-            "path": "./syntaxes/inform.tmLanguage.json"
+            "language": "inform6",
+            "scopeName": "source.inform6",
+            "path": "./syntaxes/inform6.tmLanguage.json"
         }]
     }
 }
