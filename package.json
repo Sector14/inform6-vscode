@@ -1,7 +1,7 @@
 {
     "name": "inform6-syntax-highlighting",
     "displayName": "Inform6 Syntax Highlighting",
-    "description": "Syntax highlighting for the inform6 interactive fiction lanauge.",
+    "description": "Syntax highlighting for the inform6 interactive fiction language.",
     "version": "0.0.1",
     "publisher": "na",
     "engines": {
