@@ -1,0 +1,26 @@
+{
+    "name": "inform6-syntax-highlighting",
+    "displayName": "Inform6 Syntax Highlighting",
+    "description": "Syntax highlighting for the inform6 interactive fiction lanauge.",
+    "version": "0.0.1",
+    "publisher": "na",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "inform",
+            "aliases": ["inform", "inform"],
+            "extensions": [".inf",".h"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "inform",
+            "scopeName": "source.inform",
+            "path": "./syntaxes/inform.tmLanguage.json"
+        }]
+    }
+}
