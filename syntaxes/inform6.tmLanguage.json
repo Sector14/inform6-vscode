@@ -33,6 +33,10 @@
 				{
 					"name": "constant.numeric.base10.inform6",
 					"match": "\\b[+-]?\\d+\\b"
+				},
+				{
+					"name": "constant.language.inform6",
+					"match": "\\b(true|false)\\b"
 				}
 			]
 		},
