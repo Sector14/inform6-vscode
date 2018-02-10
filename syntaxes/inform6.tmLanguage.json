@@ -64,13 +64,25 @@
 		},
 		
 		"strings": {
-			"name": "string.quoted.double.inform6",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.inform6",
-					"match": "\\\\."
+					"name": "string.quoted.double.inform6",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [{
+						"name": "constant.character.escape.inform6",
+						"match": "\\\\."
+					}]
+				},
+				{
+					"comment": "Treats single quoted character as well as single quoted dictionary words as the same",
+					"name": "string.quoted.single.inform6",
+					"begin": "'",
+					"end": "'",
+					"patterns": [{
+						"name": "constant.character.escape.inform6",
+						"match": "\\\\."
+					}]
 				}
 			]
 		}		
