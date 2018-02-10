@@ -6,16 +6,38 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#directives"
+		},
+		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
-	"repository": {
+	"repository": {		
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.exclamation.inform6",
+				"begin": "!",
+				"end": "\\n" 
+			}]
+		},
+
+		"directives": {
+			"patterns": [{
+				"name": "keyword.other.directive.inform6",
+				"match": "\\b(Abbreviate|Array|Attribute|Class|Constant|Default|End|EndIf|Extend|Global|Ifdef|Ifndef|Ifnot|Iftrue|Iffalse|Import|Include|Link|Lowstring|Message|Object|Property|Release|Replace|Serial|Switches|Statusline(//s+)(score|time)|System_file|Verb|Zcharacter)\\b"
+			}]
+		},
+
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.inform6",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(box|break|continue|do|else|font(\\s+)(on|off)|for|give|if|jump|move|new_line|objectloop|print|print_ret|remote|return|rfalse|rtrue|spaces|string|style(//s+)(roman|bold|underline|reverse|fixed)|switch|until|while)\\b"
 			}]
 		},
+		
 		"strings": {
 			"name": "string.quoted.double.inform6",
 			"begin": "\"",
@@ -26,7 +48,7 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		}		
 	},
 	"scopeName": "source.inform6"
 }
