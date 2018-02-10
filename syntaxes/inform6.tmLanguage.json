@@ -55,7 +55,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.inform6",
-				"match": "\\b(box|break|continue|do|else|font(\\s+)(on|off)|for|give|if|jump|move|new_line|objectloop|print|print_ret|remote|return|rfalse|rtrue|spaces|string|style(//s+)(roman|bold|underline|reverse|fixed)|switch|until|while)\\b"
+				"match": "\\b(box|break|continue|do|else|font(\\s+)(on|off)|for|give|if|inversion|jump|move|new_line|objectloop|print|print_ret|read|remove|restore|return|rfalse|rtrue|save|spaces|string|style(//s+)(roman|bold|underline|reverse|fixed)|switch|until|while)\\b"
 			}]
 		},
 		
