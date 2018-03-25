@@ -2,7 +2,7 @@
     "name": "inform6-syntax-highlighting",
     "displayName": "Inform6 Syntax Highlighting",
     "description": "Syntax highlighting for the inform6 interactive fiction language.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "na",
     "engines": {
         "vscode": "^1.20.0"
