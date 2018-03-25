@@ -1,7 +1,6 @@
 # Change Log
 All notable changes to the "inform6-syntax-highlighting" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-- Initial release
+## [1.0] - 2018-02-10
+### Added
+- Keyword, directives, comment and numeric highlighting.
